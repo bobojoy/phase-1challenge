@@ -1,4 +1,5 @@
-This is a personal project that is used to calculate the following probelms:
+This is a personal project that is used to calculate the following problems:
+
 Problem 1: Student Grade Generator
 Write a function that prompts the user to input student marks. The input should be between 0 and 100. The output should correspond the correct grade, as shown below: 
 
