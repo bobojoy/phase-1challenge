@@ -57,7 +57,7 @@ Running the application is very straight forward. You can use the following step
 
 # Authors
 This project was contributed to by:
-- [Joy Wambui](https://github.com/bobojoy/)
+- [Joy Wambui](https://github.com/otsembo/)
 
 # License
 The project is licensed under Apache 2.0.
