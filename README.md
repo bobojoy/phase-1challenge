@@ -1,24 +1,63 @@
-This is a personal project that is used to calculate the following probelms:
-Problem 1: Student Grade Generator
-Write a function that prompts the user to input student marks. The input should be between 0 and 100. The output should correspond the correct grade, as shown below: 
+# Routing in React
 
-    A > 79, B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40.
-Problem 2: Speed Detector
-Write a program that takes the speed of a car as input e.g 80. If the speed is less than 70, it should print “Ok”. Otherwise, for every 5 km/s above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points.
-Problem 3: Net Salary Calculator
-Write a program whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. Calculate the payee (i.e. Tax), NHIF Deductions, NSSF Deductions, gross salary, and net salary. 
-Acknowledgements
-I used the Aren Software Website to get the specific values for calculating Tax (i.e Payee),NHIF and NSSF deduction, Net Salary & Gross Slary.
+# Description
+Let us get a deep dive into how to configure routing in REACT.
 
-Aren Software
-Installation
-To install this repository, clone the repository onto your local machine's desired folder.
 
-When inside your terminal, navigate to where you cloned the repository and while inside the repository open it.
+# Getting Started
+In order for you to use the content on this repo ensure you have the following:
 
-  1. cd phase-1-week-1-toy-labs (To navigate inside the cloned repository)
-  2. code . (To open the project through Visual Studio Code)
+- A computer that runs on either of the following; (Windows 7+, Linux, Mac OS)
+- nodejs 9.0+
+- Some bit of patience for your own sanity.
 
-Authors
+## Installation
 
-@joywambui
+To use this repo on your machine requires some simple steps
+
+### Alternative One
+
+- Open a terminal / command line interface on your computer
+- Clone the repo by using the following:
+
+        git clone https://github.com/otsembo/l2-routining.git
+
+- Be patient as it creates a copy on your local machine for you.
+- Change directory to the repo folder:
+
+        cd l2-routing
+
+- (Optional) Open it in ``Visual Studio Code``
+
+        code .
+
+- (Alternate Option) Open it in any editor of your choice.
+- Hurray! You are one step closer to being as intelligent as Einstein.
+
+### Alternative Two
+
+- On the top right corner of this page there is a button labelled ``Fork``.
+- Click on that button to fork the repo to your own account.
+- Take on the process in ``Alternative One`` above.
+- Remember to replace your username when cloning.
+
+        git clone https://github.com/your-username-here/l2-routing.git
+
+
+# Running the application
+
+Running the application is very straight forward. You can use the following steps to run the app.
+
+- Install required dependencies from npm
+
+      npm install
+- Run the application on the browser
+
+      npm start
+
+# Authors
+This project was contributed to by:
+- [Joy Wambui](https://github.com/otsembo/)
+
+# License
+The project is licensed under Apache 2.0.
