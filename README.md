@@ -1,63 +1,46 @@
-# Routing in React
+#Code Challenge
 
-# Description
-Let us get a deep dive into how to configure routing in REACT.
+ #Description
+There are these separate files.
 
+Student Grade Generator-It prompts the user to input students marks,then output the correct grade according to the marks given.
 
-# Getting Started
-In order for you to use the content on this repo ensure you have the following:
+Speed Detector-Takes the speed of the car as input, determines if the driver gets demerit points depending on the speed and print out relevant messages.
 
-- A computer that runs on either of the following; (Windows 7+, Linux, Mac OS)
-- nodejs 9.0+
-- Some bit of patience for your own sanity.
-
-## Installation
-
-To use this repo on your machine requires some simple steps
-
-### Alternative One
-
-- Open a terminal / command line interface on your computer
-- Clone the repo by using the following:
-
-        git clone https://github.com/otsembo/l2-routining.git
-
-- Be patient as it creates a copy on your local machine for you.
-- Change directory to the repo folder:
-
-        cd l2-routing
-
-- (Optional) Open it in ``Visual Studio Code``
-
-        code .
-
-- (Alternate Option) Open it in any editor of your choice.
-- Hurray! You are one step closer to being as intelligent as Einstein.
-
-### Alternative Two
-
-- On the top right corner of this page there is a button labelled ``Fork``.
-- Click on that button to fork the repo to your own account.
-- Take on the process in ``Alternative One`` above.
-- Remember to replace your username when cloning.
-
-        git clone https://github.com/your-username-here/l2-routing.git
+Net Salary Calculator-It calculates an individual's Net salary by getting the input of basic salary and benefits.
 
 
-# Running the application
+ #Getting Files
 
-Running the application is very straight forward. You can use the following steps to run the app.
+ Fork your repository and create a new branch in your terminal.
+ Make appropriate changes in files.
+ Run the server to see the changes.
+ Add the changes and commit them.
+ Push to the branch.
+ Create a pull request.
+        Open the folder location on the terminal and use the following command to run app.
+  
 
-- Install required dependencies from npm
 
-      npm install
-- Run the application on the browser
 
-      npm start
 
+
+## How to run it
+clone repository
+
+run using live server
+
+### Dependencies
+indextest.js
+
+### Technologies used
+JavaScript
+
+# Contact info
+. Email:bobojoy444@gmail
 # Authors
 This project was contributed to by:
-- [Joy Wambui](https://github.com/otsembo/)
+- [Joy Wambui](https://github.com/bobojoy/)
 
 # License
-The project is licensed under Apache 2.0.
+MIT License Copyright (c) 2024 Joy Wambui.
