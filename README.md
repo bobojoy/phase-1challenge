@@ -1,46 +1,40 @@
-#Code Challenge
+# Code Challenge
 
- #Description
-There are these separate files.
+## Description
+There are three separate files:
 
-Student Grade Generator-It prompts the user to input students marks,then output the correct grade according to the marks given.
+1. Student Grade Generator: It prompts the user to input students' marks and then outputs the correct grade according to the marks given.
 
-Speed Detector-Takes the speed of the car as input, determines if the driver gets demerit points depending on the speed and print out relevant messages.
+2. Speed Detector: This program takes the speed of the car as input, determines if the driver gets demerit points depending on the speed, and prints out relevant messages.
 
-Net Salary Calculator-It calculates an individual's Net salary by getting the input of basic salary and benefits.
+3. Net Salary Calculator: It calculates an individual's net salary by getting the input of basic salary and benefits.
 
+### Getting Files
 
- #Getting Files
+1. Fork your repository and create a new branch in your terminal.
+2. Make appropriate changes in the files.
+3. Run the server to see the changes.
+4. Add the changes and commit them.
+5. Push to the branch.
+6. Create a pull request.
 
- Fork your repository and create a new branch in your terminal.
- Make appropriate changes in files.
- Run the server to see the changes.
- Add the changes and commit them.
- Push to the branch.
- Create a pull request.
-        Open the folder location on the terminal and use the following command to run app.
-  
+Open the folder location on the terminal and use the following command to run the app.
 
-
-
-
-
-## How to run it
-clone repository
-
-run using live server
+### How to run it
+- Clone the repository
+- Run using live server
 
 ### Dependencies
-indextest.js
+- indextest.js
 
 ### Technologies used
-JavaScript
+- JavaScript
 
-# Contact info
-. Email:bobojoy444@gmail
-# Authors
-This project was contributed to by:
+### Contact info
+- Email: bobojoy444@gmail
+
+### Authors
 - [Joy Wambui](https://github.com/bobojoy/)
 
-# License
+### License
 MIT License Copyright (c) 2024 Joy Wambui.
