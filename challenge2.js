@@ -1,16 +1,29 @@
-function speedDetector(speedDetector) {
-   //The speed is lesss than 70 km/s
-   if (speed < 70){
-    //If the speed is less than 70,it should print "Ok"
+function checkSpeed(speed) {
+    const speedLimit = 70;
+    const kmPerDemeritPoint = 5;
+    const maxPoints = 12;
+
+    if (typeof speed !== 'number' || isNaN(speed) || speed < 0) {
+		console.log('Invalid speed');
+		return;
+	}
+
+//The speed is less than 70,it should print "Ok" 
+   if (speed < speedLimit){
     console.log("Ok");
-   } else {
-    const demeritPoints = ((speed -70) / 5);
-    console.log('Points: ${demeritPoints}');
-    //If the driver has more than 12 points,the license is suspended
-    if (demeritPoints > 12) {
+    return;
+   }
+
+//Calculate number of demerit points
+   let points =Math.floor((speed - speedLimit) / kmPerPoints) ;
+//Round down to the nearest whole number
+    points = points - (points % 1);   
+    if (points > maxPoints) {
         console.log("License suspended");
-    }
+    } else {
+        console.log("Points: ${points}");
+
    }
 }
 
-console.log(speedDetector(50));
+

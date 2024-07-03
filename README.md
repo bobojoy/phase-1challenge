@@ -1,63 +1,40 @@
-# Routing in React
+# Code Challenge
 
-# Description
-Let us get a deep dive into how to configure routing in REACT.
+## Description
+There are three separate files:
 
+1. Student Grade Generator: It prompts the user to input students' marks and then outputs the correct grade according to the marks given.
 
-# Getting Started
-In order for you to use the content on this repo ensure you have the following:
+2. Speed Detector: This program takes the speed of the car as input, determines if the driver gets demerit points depending on the speed, and prints out relevant messages.
 
-- A computer that runs on either of the following; (Windows 7+, Linux, Mac OS)
-- nodejs 9.0+
-- Some bit of patience for your own sanity.
+3. Net Salary Calculator: It calculates an individual's net salary by getting the input of basic salary and benefits.
 
-## Installation
+### Getting Files
 
-To use this repo on your machine requires some simple steps
+1. Fork your repository and create a new branch in your terminal.
+2. Make appropriate changes in the files.
+3. Run the server to see the changes.
+4. Add the changes and commit them.
+5. Push to the branch.
+6. Create a pull request.
 
-### Alternative One
+Open the folder location on the terminal and use the following command to run the app.
 
-- Open a terminal / command line interface on your computer
-- Clone the repo by using the following:
+### How to run it
+- Clone the repository
+- Run using live server
 
-        git clone https://github.com/otsembo/l2-routining.git
+### Dependencies
+- indextest.js
 
-- Be patient as it creates a copy on your local machine for you.
-- Change directory to the repo folder:
+### Technologies used
+- JavaScript
 
-        cd l2-routing
+### Contact info
+- Email: bobojoy444@gmail
 
-- (Optional) Open it in ``Visual Studio Code``
+### Authors
+- [Joy Wambui](https://github.com/bobojoy/)
 
-        code .
-
-- (Alternate Option) Open it in any editor of your choice.
-- Hurray! You are one step closer to being as intelligent as Einstein.
-
-### Alternative Two
-
-- On the top right corner of this page there is a button labelled ``Fork``.
-- Click on that button to fork the repo to your own account.
-- Take on the process in ``Alternative One`` above.
-- Remember to replace your username when cloning.
-
-        git clone https://github.com/your-username-here/l2-routing.git
-
-
-# Running the application
-
-Running the application is very straight forward. You can use the following steps to run the app.
-
-- Install required dependencies from npm
-
-      npm install
-- Run the application on the browser
-
-      npm start
-
-# Authors
-This project was contributed to by:
-- [Joy Wambui](https://github.com/otsembo/)
-
-# License
-The project is licensed under Apache 2.0.
+### License
+MIT License Copyright (c) 2024 Joy Wambui.

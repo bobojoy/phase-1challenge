@@ -1,56 +1,79 @@
-function calculateNetSalary(basicSalary, benefits) {
-    // Calculate the gross salary
-    const grossSalary = basicSalary + benefits;
-    // Calculate the tax payee
+//Calculate grossSalary
+  function calculateGrossSalary(basicPay, benefits) {
+      const grossSalary = basicPay + benefits;
+      console.log("Your gross salary is:", grossSalary);
+      return grossSalary;
+  }
+
+// Calculate the tax payee
   let taxPayee = 0;
   if (grossSalary <= 24000) {
-    taxPayee = basicSalary * TaxRate;
-  } else {
-    taxPayee = 24000 * TaxRate + (grossSalary - 24000) * higherTaxRate;
+      taxPayee = grossSalary * 0.1;
+  } else if(grossSalary <=32333){
+      taxPayee = 2400 + (grossSalary - 24000) * 0.25;
+  }else {
+      taxPayee = 2400 + 2083.25 + (grossSalary - 32333) * 0.3;
   }
-  // Calculate the NHIF deduction
+
+  return taxPayee;
+     
+// Calculate the NSSF Deductions
+  function calculateNSSF(grossSalary) {
+    //Assuming the grosssalary is 6%
+    return grossSalary * 0.06; 
+  }
+
+//Calculate NHIF Deductions
+  function calculateNHIF(grossSalary) {
+    
   let nhifDeduction = 0;
-  if (grossSalary >= 5999) {
-    if (grossSalary <= 7999) {
-      nhifDeduction = nhifRate * 150;
+    if (grossSalary >= 5999) {
+      nhif = 150;
+    }else if (grossSalary <= 7999) {
+      nhif = 300; 
     } else if (grossSalary <= 11999) {
-      nhifDeduction = nhifRate * 300;
+      nhif = 400;
     } else if (grossSalary <= 14999) {
-      nhifDeduction = nhifRate * 400;
+      nhif = 500;
     } else if (grossSalary <= 19999) {
-      nhifDeduction = nhifRate * 500;
+      nhif = 600;
     } else if (grossSalary <= 24999) {
-      nhifDeduction = nhifRate * 600;
+      nhif = 750;
     } else if (grossSalary <= 29999) {
-      nhifDeduction = nhifRate * 750;
+      nhif = 850;
     } else if (grossSalary <= 34999) {
-      nhifDeduction = nhifRate * 850;
+      nhif = 900;
     } else if (grossSalary <= 39999) {
-      nhifDeduction = nhifRate * 950;
+      nhif = 950;
     } else if (grossSalary <= 44999) {
-      nhifDeduction = nhifRate * 1050;
+      nhif = 1000;
     } else if (grossSalary <= 49999) {
-      nhifDeduction = nhifRate * 1150;
+      nhif = 1100;
     } else if (grossSalary <= 59999) {
-      nhifDeduction = nhifRate * 1200;
+      nhif = 1200;
     } else if (grossSalary <= 69999) {
-      nhifDeduction = nhifRate * 1300;
+      nhif = 1300;
     } else if (grossSalary <= 79999) {
-      nhifDeduction = nhifRate * 1400;
+      nhif = 1400;
     } else if (grossSalary <= 89999) {
-      nhifDeduction = nhifRate * 1500;
+      nhif = 1500;
     } else if (grossSalary <= 99999) {
-      nhifDeduction = nhifRate * 1600;
-    } else if (grossSalary <= 100000) {
-      nhifDeduction = nhifRate * 1700;
+      nhif = 1600;
     } else {
-      nhifDeduction = nhifRate * 1800;
+      nhif = 1700;
+
     }
-  }
+      
+      return nhif;  
+  } 
+     
+//Calculate Net Salary
+function calculateNetSalary(basicSalary, benefits ) {
+  let grossSalary = basicSalary + benefits;
+  let paye = calculatePAYE(grossSalary);
+  let nhif = calculateNHIF(grossSalary);
+  let nssf = calculateNSSF(grossSalary);
+  let netSalary = grossSalary - paye - nhif - nssf;
 
-  // Calculate the NSSF deduction
-  const nssfDeduction = grossSalary * nssfRate;
-
-  // Calculate the net salary
-  const netSalary = grossSalary - taxPayee - nhifDeduction
+  return netSalary;
 }
