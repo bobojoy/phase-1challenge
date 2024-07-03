@@ -37,4 +37,8 @@ Open the folder location on the terminal and use the following command to run th
 - [Joy Wambui](https://github.com/bobojoy/)
 
 ### License
+<<<<<<< HEAD
 MIT License Copyright (c) 2024 Joy Wambui.
+=======
+MIT License Copyright (c) 2024 Joy Wambui.
+>>>>>>> e9e61d45b950c2b2b136c2b5c0253a714de2bb4e
