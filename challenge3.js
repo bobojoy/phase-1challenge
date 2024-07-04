@@ -1,27 +1,19 @@
-//Calculate grossSalary
-  function calculateGrossSalary(basicPay, benefits) {
-      const grossSalary = basicPay + benefits;
-      console.log("Your gross salary is:", grossSalary);
-      return grossSalary;
-  }
 
 // Calculate the tax payee
-  let taxPayee = 0;
+function calculatePAYE(grossSalary) {
+  let paye = 0;
   if (grossSalary <= 24000) {
-      taxPayee = grossSalary * 0.1;
+      paye = grossSalary * 0.1;
   } else if(grossSalary <=32333){
-      taxPayee = 2400 + (grossSalary - 24000) * 0.25;
+      paye = 2400 + (grossSalary - 24000) * 0.25;
   }else {
-      taxPayee = 2400 + 2083.25 + (grossSalary - 32333) * 0.3;
+      paye = 2400 + 2083.25 + (grossSalary - 32333) * 0.3;
   }
 
-  return taxPayee;
+  return paye;
      
-// Calculate the NSSF Deductions
-  function calculateNSSF(grossSalary) {
-    //Assuming the grosssalary is 6%
-    return grossSalary * 0.06; 
-  }
+}
+  
 
 //Calculate NHIF Deductions
   function calculateNHIF(grossSalary) {
@@ -66,6 +58,13 @@
       
       return nhif;  
   } 
+
+// Calculate the NSSF Deductions
+  function calculateNSSF(grossSalary) {
+//Assuming the grosssalary is 6%
+    return grossSalary * 0.06; 
+  }
+
      
 //Calculate Net Salary
 function calculateNetSalary(basicSalary, benefits ) {
@@ -74,6 +73,17 @@ function calculateNetSalary(basicSalary, benefits ) {
   let nhif = calculateNHIF(grossSalary);
   let nssf = calculateNSSF(grossSalary);
   let netSalary = grossSalary - paye - nhif - nssf;
-
-  return netSalary;
 }
+
+  return  {
+    grossSalary : grossSalary,
+
+    paye:paye,
+
+    nhif : nhif,
+
+    nssf : nssf,
+
+    netSalary : netSalary  
+
+  }
