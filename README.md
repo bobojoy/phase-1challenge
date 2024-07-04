@@ -13,7 +13,6 @@ Submit the repository link for grading.
 Ensure your repository has a well written README.
 
 ## System Requirements
-Node 18+
 A browser capable of running JavaScript (Chrome, Firefox, Safari, or Edge)
 Operating System (Windows 10+, MacOS, Linux, etc.)
 A text editor capable of running JavaScript (Visual Studio Code, Vim, Nano, Emacs, Atom, Sublime Text, etc.)
@@ -32,7 +31,7 @@ Open the terminal/CLI on your computer.
 
 Clone the repository by running the following command:
 
-git clone https://github.com/oyieroyier/toy_problems_js_only.git
+git clone https://github.com/bobjoy/toy_problems_js_only.git
 
 Change directory to the repo folder:
 
@@ -95,6 +94,7 @@ Remember to comment out each function execution once done to avoid confusion wit
 This project was contributed to by:
 
 Joy Wambui
+
 License
 License: ICL
 
