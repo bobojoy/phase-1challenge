@@ -1,4 +1,3 @@
-
 // Calculate the tax payee
 function calculatePAYE(grossSalary) {
   let paye = 0;
@@ -18,7 +17,7 @@ function calculatePAYE(grossSalary) {
 //Calculate NHIF Deductions
   function calculateNHIF(grossSalary) {
     
-  let nhifDeduction = 0;
+  
     if (grossSalary >= 5999) {
       nhif = 150;
     }else if (grossSalary <= 7999) {
@@ -73,6 +72,8 @@ function calculateNetSalary(basicSalary, benefits ) {
   let nhif = calculateNHIF(grossSalary);
   let nssf = calculateNSSF(grossSalary);
   let netSalary = grossSalary - paye - nhif - nssf;
+
+  return netSalary;
 }
 
-  
+ console.log(calculateNetSalary(50000, 7000)); 
