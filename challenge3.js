@@ -75,15 +75,4 @@ function calculateNetSalary(basicSalary, benefits ) {
   let netSalary = grossSalary - paye - nhif - nssf;
 }
 
-  return  {
-    grossSalary : grossSalary,
-
-    paye:paye,
-
-    nhif : nhif,
-
-    nssf : nssf,
-
-    netSalary : netSalary  
-
-  }
+  
